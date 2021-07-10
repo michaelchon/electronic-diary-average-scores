@@ -1,0 +1,23 @@
+.extension-avg-mark {
+    display: inline-block;
+    padding: 0.5rem;
+    margin-right: 0.1rem;
+    border: 1px solid black;
+    color: black;
+}
+.extension-avg-mark--high {
+    background-color: lightgreen;
+}
+.extension-avg-mark--normal {
+    background-color: yellow;
+}
+.extension-avg-mark--low {
+    background-color: orange;
+}
+.extension-avg-mark--very-low {
+    background-color: orangered;
+}
+
+.date-grid__cell {
+    height: 60px !important;
+}

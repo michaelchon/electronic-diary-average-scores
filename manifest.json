@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Электронный дневник: средний балл",
+    "description": "Расширение показывает средний балл по школьным предметам на сайте электронного дневника Санкт-Петербурга \"https://petersburgedu.ru/\".",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://dnevnik2.petersburgedu.ru/*"],
+            "run at": "document.end",
+            "js": [
+                "content_scripts/js/config/index.js",
+                "content_scripts/js/utils/on-element-creation.js",
+                "content_scripts/js/utils/mark-manager.js",
+                "content_scripts/js/utils/mark-data-extractor.js",
+                "content_scripts/js/utils/create-avg-mark-element.js",
+                "content_scripts/js/utils/program.js",
+                "content_scripts/js/index.js"
+            ],
+            "css": ["content_scripts/css/index.css"]
+        }
+    ]
+}
